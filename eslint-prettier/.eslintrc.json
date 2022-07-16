@@ -1,0 +1,36 @@
+{
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es2021": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/function-component-definition": 0
+  }
+}
