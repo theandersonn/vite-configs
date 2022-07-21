@@ -32,6 +32,8 @@
     "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/function-component-definition": 0,
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
     "no-shadow": "off"
   }
 }
